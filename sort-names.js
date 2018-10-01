@@ -9,6 +9,8 @@ function sortStudents(studentArray) {
   studentArray.sort(function(a, b) {
     if (a.name > b.name) {
       return 1;
+    } else if (a.name < b.name){
+      return -1;
     } else if (a.name[0] === b.name[0]) {
       return b.age - a.age;
     }
